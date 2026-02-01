@@ -3,7 +3,8 @@
 Smart Trees 是一个基于 Web 的知识可视化与管理系统，利用 3D 技术和 AI 能力，帮助用户构建、浏览和管理复杂的知识体系。
 
 ## 图示
-![Uploading image.png…]()
+<img width="1566" height="1227" alt="image" src="https://github.com/user-attachments/assets/8cabf71d-c588-456f-80fd-e0d56697d4b9" />
+
 
 
 
