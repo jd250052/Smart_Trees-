@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050906;
+  color: #ecfdf5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+::-webkit-scrollbar { 
+  width: 8px; 
+  height: 8px; 
+}
+
+::-webkit-scrollbar-thumb { 
+  background: rgba(16, 185, 129, 0.1); 
+  border-radius: 20px; 
+}
+
+.draggable-bg { 
+  touch-action: none; 
+}
+
+.will-change-transform { 
+  will-change: transform; 
+}
+
+@keyframes leafIn { 
+  from { opacity: 0; transform: translateY(60px) scale(0.9); } 
+  to { opacity: 1; transform: translateY(0) scale(1); } 
+}
+
+.animate-in { 
+  animation: leafIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; 
+}
+
+@keyframes shimmer { 
+  0% { transform: translateX(-100%); } 
+  100% { transform: translateX(100%); } 
+}
+
+.animate-shimmer { 
+  animation: shimmer 2s infinite linear; 
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+  to { opacity: 1; } 
+}
+
+.fade-in { 
+  animation: fadeIn 1s ease-out forwards; 
+}
+
+@keyframes zoomIn { 
+  from { opacity: 0; transform: scale(0.95); } 
+  to { opacity: 1; transform: scale(1); } 
+}
+
+.zoom-in { 
+  animation: zoomIn 1s ease-out forwards; 
+}
+
+@keyframes slideInFromTop2 { 
+  from { opacity: 0; transform: translateY(-8px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+
+.slide-in-from-top-2 { 
+  animation: slideInFromTop2 0.3s ease-out forwards; 
+}
+
+@keyframes slideInFromBottom4 { 
+  from { opacity: 0; transform: translateY(16px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+
+.slide-in-from-bottom-4 { 
+  animation: slideInFromBottom4 0.5s ease-out forwards; 
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-none {
+  display: block;
+  overflow: visible;
+}
